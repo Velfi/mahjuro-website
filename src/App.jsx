@@ -371,7 +371,7 @@ function HomePage() {
 
 function App() {
   const pathname = typeof window === 'undefined' ? '/' : normalizePath(window.location.pathname);
-  const isSupportPage = pathname === '/support/mahjuro';
+  const isSupportPage = pathname === '/support';
 
   React.useEffect(() => {
     document.title = isSupportPage
